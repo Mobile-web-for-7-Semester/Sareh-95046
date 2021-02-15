@@ -25,13 +25,14 @@ export default function App() {
         <Stack.Screen name="Contacts" component={Contact}
          options={({navigation})=>({
            headerRight:()=>(
-              <TouchableOpacity style={{paddingRight:20}} onPress={()=> navigation.navigate('Search')}>
+              <TouchableOpacity style={{paddingRight:20}} onPress={(SearchScreen)=> navigation.navigate('SearchScreen')}>
                 <Text>
                   <MaterialIcons name="search" size={24} color="black"/>
                 </Text>
               </TouchableOpacity>
          )
            })}/>
+           
            <Stack.Screen name="CreateContact" component={CreateContact}/>
       
         <Stack.Screen name="Profile" component={Profile}/>

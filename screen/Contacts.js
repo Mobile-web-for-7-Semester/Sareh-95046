@@ -8,11 +8,11 @@ import {
 }from 'react-native'
 import {Feather} from '@expo/vector-icons'
 import * as SQLite from 'expo-sqlite';
-import { ceil } from 'react-native-reanimated';
+
 
 import colors from '../utils/colors'
 import ContactListItem from '../components/ContactListItem'
-//import { useSafeArea } from 'react-native-safe-area-context';
+
 
 
 const db = SQLite.openDatabase('contacts.db');
